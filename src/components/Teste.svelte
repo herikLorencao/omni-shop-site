@@ -1,4 +1,6 @@
 <script>
+    import { Button } from "$lib/components/ui/button";
+
     let count = $state(0);
 
     function increment() {
@@ -7,4 +9,4 @@
 </script>
 
 <h1>{count}</h1>
-<button onclick={increment}>Add</button>
+<Button variant="destructive" onclick={increment}>Add</Button>
